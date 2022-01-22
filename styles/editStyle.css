@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap');
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image .3s ease-out;
+}
+
+input[type = text] {
+    width: 200px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+    background-color: unset;
+}
+    input[type = text]:hover {
+        background-color: silver;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+textarea {
+    width: 200px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+    background-color: unset;
+}
+    textarea:hover {
+        background-color: silver;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+select {
+    width: 180px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+    background-color: unset;
+}
+    select:hover{
+        background-color: silver;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+input[type = submit] {
+    width: 180px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+    background-color: unset;
+}
+    input[type = submit]:hover {
+        background-color: silver;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+.container {
+    display: flex;
+    width: 660px;
+    min-height: 335px;
+    border: 2px solid #9097A2;
+    background: #D3D4DA;
+    border-radius: 5px;
+}
+    .left img {
+        width: 22vw;
+        min-height: 44vh;
+        border-radius: 5px;
+    }
+    .right label {
+        font: 20px "Trebuchet MS", "Lucida Sans";
+        padding: .4em .8em .4em .8em;
+        margin-bottom: 2vh;
+        border-radius: 5px;
+    }
+
+@media screen and (min-width:1000px) {
+    #gif {
+        position: fixed;
+        margin-left: 57vw;
+        margin-top: -48vh;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #gif {
+        display: hidden;
+    }
+}
